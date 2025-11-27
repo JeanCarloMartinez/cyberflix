@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card {
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
