@@ -1,5 +1,6 @@
 // apiService.js
-const API_URL = import.meta.env.API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
+//const API_URL = "https://backend-cyberflix.onrender.com/api/peliculas";
 
 export async function getAll() {
   const res = await fetch(API_URL);
