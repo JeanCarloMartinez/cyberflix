@@ -1,5 +1,5 @@
 // apiService.js
-const API_URL = "http://localhost:3000/api/peliculas";
+const API_URL = import.meta.env.API_URL;
 
 export async function getAll() {
   const res = await fetch(API_URL);
