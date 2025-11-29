@@ -4,41 +4,117 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Animate.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>frontend</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cyberflix</title>
+
+    <style>
+      /* Body */
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+
+      /* Card overlay */
+      .card-img-overlay {
+        background: rgba(0, 0, 0, 0.5); /* Sutil sombreado */
+        backdrop-filter: blur(4px);
+        color: #fff;
+        padding: 2rem;
+      }
+
+      /* Título */
+      .card-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 8px #000;
+        margin-bottom: 1rem;
+      }
+
+      /* Texto */
+      .card-text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-shadow: 1px 1px 5px #000;
+      }
+
+      /* Botón personalizado */
+      .btn-danger {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-danger:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+      }
+
+      /* Imagen de fondo */
+      .card img {
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .card-title {
+          font-size: 3rem;
+        }
+        .card-text {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="col-12">
       <div class="card text-bg-dark">
         <img
-          class="opacity-50"
+          class="opacity-75"
           src="https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg"
           alt="background Netflix"
         />
         <div
           class="card-img-overlay d-flex flex-column justify-content-center text-center align-items-center"
         >
-          <h1 class="card-title">CYBERFLIX</h1>
-          <p class="card-text">
+          <h1 class="card-title animate__animated animate__fadeInDown">
+            CYBERFLIX
+          </h1>
+          <p
+            class="card-text animate__animated animate__fadeIn animate__delay-1s"
+          >
             Haz que tu colección de películas sea tan única como tú.
           </p>
           <a
             href="./src/AdminPanel.html"
-            class="btn btn-danger animate__animated animate__pulse animate__infinite"
+            class="btn btn-danger animate__animated animate__pulse animate__infinite animate__delay-2s"
           >
             Administrar colección
           </a>
